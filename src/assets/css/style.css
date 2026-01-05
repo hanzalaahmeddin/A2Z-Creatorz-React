@@ -51,6 +51,7 @@ html {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
     animation: fadeInUp 1.5s ease-out;
 }
+
 .sub-main-title-black {
     font-size: 4.5rem;
     font-weight: 800;
@@ -88,14 +89,14 @@ html {
     width: auto;
     height: 500px;
     object-fit: cover;
-    animation: float 4s ease-in-out infinite;
+    animation: fadeInUp 2.5s ease-out;
 }
 
 .hero-img2 {
     width: 500px;
     height: 557px;
     object-fit: cover;
-    animation: float 4s ease-in-out infinite;
+    animation: fadeInUp 2.5s ease-out;
 }
 
 /* ANIMATION */

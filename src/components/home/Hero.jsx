@@ -1,5 +1,5 @@
-import webImg from "../assets/images/web.png";
-import mobileImg from "../assets/images/mobile.png";
+import webImg from "../../assets/images/web.png";
+import mobileImg from "../../assets/images/mobile.png";
 
 function Hero() {
     return (

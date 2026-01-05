@@ -1,12 +1,12 @@
-import Hero from "../components/Hero";
+import Hero from "../components/home/Hero";
 
-import Services from "../components/Services";
-import AboutUs from "../components/AboutUs";
+import Services from "../components/home/Services";
+import AboutUs from "../components/home/AboutUs";
 
-import ContactForm from "../components/ContactForm";
-import Blogs from "../components/Blogs";
-import Testimonials from "../components/Testimonials";
-import OurClients from "../components/OurClients";
+import ContactForm from "../components/home/ContactForm";
+import Blogs from "../components/home/Blogs";
+import Testimonials from "../components/home/Testimonials";
+import OurClients from "../components/home/OurClients";
 
 function Home() {
     return (

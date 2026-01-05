@@ -10,37 +10,80 @@ const clientsData = [
         country: "Pakistan",
         flag: "src/assets/images/flags/Pakistan.png",
         clients: [
-            "/logos/pk1.png",
-            "/logos/pk2.png",
-            "/logos/pk3.png",
-            "/logos/pk4.png",
+            "src/assets/images/clients/State-life.png",
+            "src/assets/images/clients/PSPC.png",
+            "src/assets/images/clients/Housing-Recostruction-Unit.png",
+            "src/assets/images/clients/BHCIP.png",
+            "src/assets/images/clients/B-R-A.png",
+            "src/assets/images/clients/Future.png",
+            "src/assets/images/clients/Hamdard.png",
+            "src/assets/images/clients/HBFC.png",
+            "src/assets/images/clients/TDF.png",
+            "src/assets/images/clients/Asset-Linker.png",
+
+        ],
+    },
+    {
+        country: "United Arab Emirates",
+        flag: "src/assets/images/flags/UAE.png",
+        clients: [
+            "src/assets/images/clients/al-jaber-optical.png",
+            "src/assets/images/clients/VIVEL.png",
+            "src/assets/images/clients/Wataniya-Finance-.png",
+            "src/assets/images/clients/zillion.png",
+            "src/assets/images/clients/zoga.png",
+            "src/assets/images/clients/cr-unique.jpg",
+        ],
+    },
+    {
+        country: "Canada",
+        flag: "src/assets/images/flags/Canada.png",
+        clients: [
+            "src/assets/images/clients/Quickz-Laundry.png",
+            "src/assets/images/clients/a2z.png",
         ],
     },
     {
         country: "Qatar",
-        flag: "/flags/qatar.png",
+        flag: "src/assets/images/flags/Qatar.png",
         clients: [
-            "/logos/qa1.png",
-            "/logos/qa2.png",
-            "/logos/qa3.png",
+            "src/assets/images/clients/Dimensoin.png",
+            "src/assets/images/clients/a2z.png",
         ],
     },
     {
         country: "Australia",
-        flag: "/flags/australia.png",
+        flag: "src/assets/images/flags/Australia.png",
         clients: [
-            "/logos/au1.png",
-            "/logos/au2.png",
-            "/logos/au3.png",
+            "src/assets/images/clients/HTX-Steels.png",
+            "src/assets/images/clients/a2z.png",
         ],
     },
     {
-        country: "USA",
-        flag: "/flags/usa.png",
+        country: "United States",
+        flag: "src/assets/images/flags/USA.png",
         clients: [
-            "/logos/us1.png",
-            "/logos/us2.png",
-            "/logos/us3.png",
+            "src/assets/images/clients/ill-Australia.png",
+            "src/assets/images/clients/a2z.png",
+        ],
+    },
+    {
+        country: "KSA",
+        flag: "src/assets/images/flags/KSA.png",
+        clients: [
+            "src/assets/images/clients/Diet-Center.png",
+            "src/assets/images/clients/Eizo.png.png",
+            "src/assets/images/clients/Happy-Home.png",
+            "src/assets/images/clients/Saadedein.png",
+        ],
+    },
+    {
+        country: "Oman",
+        flag: "src/assets/images/flags/Oman.png",
+        clients: [
+            "src/assets/images/clients/dosteen.png",
+            "src/assets/images/clients/hawthorn.png",
+            "src/assets/images/clients/Al-Shaer-corp.png",
         ],
     },
 ];
@@ -75,17 +118,17 @@ function OurClients() {
 
                                 {/* COUNTRY HEADER */}
                                 <div className="country-header">
-                                    <img src={item.flag} alt={item.country} />
+                                    <img className="flagsIcon" src={item.flag} alt={item.country} />
                                     <h4>{item.country}</h4>
                                 </div>
 
                                 {/* INNER CAROUSEL – CLIENT LOGOS */}
                                 <Swiper
                                     modules={[Autoplay]}
-                                    slidesPerView={1}
+                                    slidesPerView={2}
                                     loop={true}
                                     autoplay={{
-                                        delay: 1600,
+                                        delay: 1000,
                                         disableOnInteraction: false,
                                     }}
                                     className="client-logo-swiper"
