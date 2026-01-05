@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import logoDark from "../assets/images/a2zcreatorz-logo.png";
 import logoWhite from "../assets/images/a2z-logo-white.png";
 
-import { FiMenu, FiX, FiGlobe, FiSmartphone, FiTrendingUp, FiShoppingCart, FiPalette, FiUsers, FiShield, FiServer, FiLock, FiCloud, FiFileText, FiBriefcase, FiCode } from "react-icons/fi";
+import { FiMenu, FiX, FiGlobe, FiSmartphone, FiTrendingUp, FiShoppingCart, FiLayout, FiUsers, FiShield, FiServer, FiLock, FiCloud, FiFileText, FiBriefcase, FiCode } from "react-icons/fi";
 import { BsArrowDownShort } from "react-icons/bs";
 import "../assets/css/header.css";
 
@@ -62,7 +62,7 @@ function Header() {
                                 <Link to="/services/mobile-application" onClick={() => setMenuOpen(false)}><FiSmartphone /> Mobile Application</Link>
                                 <Link to="/services/ecommerce" onClick={() => setMenuOpen(false)}><FiShoppingCart /> Ecommerce</Link>
                                 <Link to="/services/digital-marketing" onClick={() => setMenuOpen(false)}><FiTrendingUp /> Digital Marketing</Link>
-                                <Link to="/services/ui-ux-design" onClick={() => setMenuOpen(false)}><FiPalette /> UI/UX Design</Link>
+                                <Link to="/services/ui-ux-design" onClick={() => setMenuOpen(false)}><FiLayout /> UI/UX Design</Link>
                                 <Link to="/services/it-staff-outsourcing" onClick={() => setMenuOpen(false)}><FiUsers /> IT Staff Outsourcing</Link>
                                 <Link to="/services/web-digital-security" onClick={() => setMenuOpen(false)}><FiShield /> Web & Digital Security</Link>
                                 <Link to="/services/web-hosting" onClick={() => setMenuOpen(false)}><FiServer /> Web Hosting</Link>
