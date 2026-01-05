@@ -1,21 +1,21 @@
 import InnerPageBanner from "../components/InnerPageBanner";
 
-function Contact() {
+function OurClients() {
     return (
         <div>
             <InnerPageBanner
-                title="Contact Us"
-                subtitle="Get in touch with us for your next project."
+                title="Our Clients"
+                subtitle="Trusted by leading companies worldwide."
                 imageSrc="/service-bg.webp"
             />
             <section className="py-5">
                 <div className="container">
-                    <h2>Contact Us</h2>
-                    <p>Contact form and details.</p>
+                    <h2>Our Clients</h2>
+                    <p>List of our valued clients.</p>
                 </div>
             </section>
         </div>
     );
 }
 
-export default Contact;
+export default OurClients;

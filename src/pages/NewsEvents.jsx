@@ -1,21 +1,21 @@
 import InnerPageBanner from "../components/InnerPageBanner";
 
-function Contact() {
+function NewsEvents() {
     return (
         <div>
             <InnerPageBanner
-                title="Contact Us"
-                subtitle="Get in touch with us for your next project."
+                title="News & Events"
+                subtitle="Stay updated with the latest news and events from A2Z Creatorz."
                 imageSrc="/service-bg.webp"
             />
             <section className="py-5">
                 <div className="container">
-                    <h2>Contact Us</h2>
-                    <p>Contact form and details.</p>
+                    <h2>News & Events</h2>
+                    <p>Latest updates and events.</p>
                 </div>
             </section>
         </div>
     );
 }
 
-export default Contact;
+export default NewsEvents;

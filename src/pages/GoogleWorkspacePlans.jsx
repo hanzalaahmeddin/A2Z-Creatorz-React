@@ -1,21 +1,21 @@
 import InnerPageBanner from "../components/InnerPageBanner";
 
-function Contact() {
+function GoogleWorkspacePlans() {
     return (
         <div>
             <InnerPageBanner
-                title="Contact Us"
-                subtitle="Get in touch with us for your next project."
+                title="Google Work Space Plans"
+                subtitle="Streamline your productivity with Google Workspace solutions."
                 imageSrc="/service-bg.webp"
             />
             <section className="py-5">
                 <div className="container">
-                    <h2>Contact Us</h2>
-                    <p>Contact form and details.</p>
+                    <h2>Google Work Space Plans</h2>
+                    <p>Details about Google Workspace plans.</p>
                 </div>
             </section>
         </div>
     );
 }
 
-export default Contact;
+export default GoogleWorkspacePlans;

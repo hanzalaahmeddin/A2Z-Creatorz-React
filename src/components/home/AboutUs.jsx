@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import aboutImg from "../../assets/images/about-left-img.webp";
 
 function AboutUs() {
     const [isVisible, setIsVisible] = useState(false);
@@ -68,7 +69,7 @@ function AboutUs() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6 text-center">
-                        <img src="/src/assets/images/about-left-img.webp" alt="A2Z Creatorz About us" className={`img-fluid logo-hover ${isVisible ? 'fade-in' : ''}`} />
+                        <img src={aboutImg} alt="A2Z Creatorz About us" className={`img-fluid logo-hover ${isVisible ? 'fade-in' : ''}`} />
                     </div>
                     <div className="col-lg-6">
                         <h2 className={`sub-main-title ${isVisible ? 'fade-in-delay-1' : ''}`}>About Us</h2>
