@@ -1,0 +1,238 @@
+:root {
+    --primary: #f15a22;
+}
+
+/* ===== HEADER BASE ===== */
+.dg-header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease;
+}
+
+/* ===== INNER ===== */
+.dg-inner {
+    max-width: 1400px;
+    margin: auto;
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 60px;
+    transition: all 0.4s ease;
+}
+
+/* 🔹 NORMAL STATE (TRANSPARENT) */
+.dg-header:not(.scrolled) .dg-inner {
+    background: transparent;
+}
+
+/* 🔹 STICKY STATE */
+.dg-header.scrolled {
+    top: 12px;
+}
+
+.dg-header.scrolled .dg-inner {
+    max-width: 85%;
+    background: rgba(15, 15, 15, 0.75);
+    backdrop-filter: blur(14px);
+    padding: 12px 26px;
+}
+
+/* ===== LOGO ===== */
+.dg-logo img {
+    height: 38px;
+    transition: 0.3s ease;
+}
+
+/* ===== NAV ===== */
+.dg-nav {
+    display: flex;
+    gap: 32px;
+    position: relative;
+    align-items: center;
+}
+
+.dg-nav-item {
+    position: relative;
+}
+
+.dg-nav a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.dg-nav a:hover,
+.dg-nav a.active {
+    color: black;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* ===== MEGA MENU ===== */
+.mega-menu {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(14px);
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mega-menu.show {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.mega-menu-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mega-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.mega-menu a:hover {
+    background: rgba(241, 90, 34, 0.2);
+    color: var(--primary);
+}
+
+/* ===== ACTIONS ===== */
+.dg-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ICONS */
+.dg-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.dg-icon:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* BUTTON */
+.dg-btn {
+    background: linear-gradient(135deg, #f15a22, #ff7b47);
+    color: #fff;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+
+.dg-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(241, 90, 34, 0.4);
+}
+
+/* ===== HAMBURGER ===== */
+.dg-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .dg-inner {
+        padding: 12px 20px;
+    }
+
+    .dg-nav {
+        display: none;
+    }
+
+    .dg-nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 15, 15, 0.95);
+        backdrop-filter: blur(14px);
+        padding: 20px;
+        gap: 16px;
+        z-index: 1000;
+    }
+
+    .dg-actions {
+        display: none;
+    }
+
+    .dg-hamburger {
+        display: block;
+    }
+
+    .dg-nav a {
+        padding: 12px 0;
+    }
+
+    .dg-nav a:hover,
+    .dg-nav a.active {
+        padding: 12px 16px;
+        margin: 0 -16px;
+    }
+
+    .mega-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background: transparent;
+        backdrop-filter: none;
+        padding: 0;
+        box-shadow: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .mega-menu.show {
+        max-height: 200px;
+        /* Adjust based on content */
+    }
+
+    .mega-menu-inner {
+        padding: 10px 0;
+    }
+}

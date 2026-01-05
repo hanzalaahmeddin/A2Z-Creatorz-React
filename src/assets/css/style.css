@@ -1,0 +1,473 @@
+:root {
+    --primary-color: #f15a22;
+}
+
+/* BUTTON STYLES */
+.btn-primary {
+    background: linear-gradient(135deg, #f15a22, #ff7b47);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ff7b47, #f15a22);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(241, 90, 34, 0.4);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: url("/src/assets/images/hero-bg.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+/* MAIN HEADING */
+.hero-main-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    animation: fadeInUp 1.5s ease-out;
+    text-align: center;
+}
+
+.sub-main-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    animation: fadeInUp 1.5s ease-out;
+}
+.sub-main-title-black {
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* SLIDE TEXT */
+.hero-slide-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    max-width: 750px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero-slide-text {
+    font-size: 1.05rem;
+    color: #d1d5db;
+    max-width: 750px;
+    text-align: center;
+    margin: 0;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* IMAGE IN RIGHT COLUMN */
+.hero-image-wrapper {
+    text-align: center;
+}
+
+.hero-img {
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    animation: float 4s ease-in-out infinite;
+}
+
+.hero-img2 {
+    width: 500px;
+    height: 557px;
+    object-fit: cover;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* ANIMATION */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ABOUT US SECTION */
+.about-us {
+    background: url("/src/assets/images/hero-bg.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.about-heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #fff;
+    max-width: 70%;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.about-us .logo-hover:hover {
+    transform: scale(1.05);
+}
+
+.about-us .fade-in {
+    animation: fadeInUp 1s ease-out;
+}
+
+.about-us .fade-in-delay-1 {
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.about-us .fade-in-delay-2 {
+    animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.about-us .fade-in-delay-3 {
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.about-us .fade-in-delay-4 {
+    animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.about-us .btn-animated {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.about-us .btn-animated:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .btn-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.about-us .btn-animated:hover::before {
+    left: 100%;
+}
+
+.about-us .stats h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.about-us .stats p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+.about-us .counter {
+    font-size: 3.5rem;
+    color: rgba(255, 255, 255, 0.226);
+    font-weight: 800;
+}
+
+
+/* SERVICES SECTION */
+.services-section {
+    background: url("/src/assets/images/service-bg.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.services-section h2 {
+    color: white;
+}
+
+.services-tabs .nav-link {
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.services-tabs .nav-link:hover,
+.services-tabs .nav-link.active {
+    background-color: rgba(241, 90, 34, 0.8);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transform: scale(1.02);
+}
+
+.services-tabs .service-icon {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.service-content {
+    background-color: transparent;
+    color: #FFFFFFB3;
+    font-size: 15px;
+    animation: fadeIn 0.5s ease;
+}
+
+.service-content ul {
+    list-style: none;
+    padding-left: 0;
+    column-count: 2;
+    column-gap: 1rem;
+}
+
+.service-content ul li::before {
+    content: '✓';
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.service-content img {
+    animation: zoomIn 0.5s ease;
+}
+
+.service-content ul {
+    animation: fadeInUp 0.5s ease 0.2s both;
+}
+
+.service-content .dg-btn {
+    animation: fadeInUp 0.5s ease 0.4s both;
+}
+
+.service-content .d-flex {
+    flex-wrap: wrap;
+}
+
+.service-content .d-flex ul {
+    width: 70%;
+    flex-shrink: 0;
+}
+
+.service-content .d-flex .btn {
+    width: 25%;
+    flex-shrink: 0;
+}
+
+.service-imgs {
+    width: 800px;
+    height: 400px;
+}
+
+
+
+/* TESTIMONIALS SECTION */
+.testimonials .carousel-item {
+    padding: 2rem 0;
+}
+
+.testimonials .blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.testimonials img {
+    border: 3px solid var(--primary-color);
+}
+
+/* BLOGS SECTION */
+.blogs .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogs .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.blogs .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTACT FORM */
+.contact-form .form-control {
+    border-radius: 0.5rem;
+}
+
+.contact-form .btn {
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #343a40;
+}
+
+/* GENERAL RESPONSIVE */
+@media (max-width: 768px) {
+    .hero-main-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-img,
+    .hero-img2 {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .services-tabs .row {
+        flex-direction: column;
+    }
+
+    .services-tabs .nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .services-tabs .tab-pane .row {
+        flex-direction: column;
+    }
+
+    .blogs .col-lg-4 {
+        margin-bottom: 2rem;
+    }
+
+    .testimonials .carousel-control-prev,
+    .testimonials .carousel-control-next {
+        width: 5%;
+    }
+
+    .service-content ul {
+        column-count: 1;
+    }
+
+    .service-content .d-flex {
+        flex-direction: column;
+    }
+
+    .service-content .d-flex ul {
+        width: 100%;
+    }
+
+    .service-content .d-flex .btn {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+/* Animation */
+.my-animate {
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* Progress Bar Background */
+
+/* Progress Fill */
+.custom-progress {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    height: 12px;
+    overflow: hidden;
+    box-shadow: -4px 10px 20px 0px rgb(241 90 34 / 38%);
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 50px;
+    transition: width 1.5s ease-in-out;
+}
+
+.orange {
+    background: linear-gradient(90deg, #ff7a18, #ffb347);
+}
+
+.purple {
+    background: linear-gradient(90deg, #5f2c82, #9d50bb);
+}
+
+.green {
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+}
+
+.blue {
+    background: linear-gradient(90deg, #396afc, #2948ff);
+}
