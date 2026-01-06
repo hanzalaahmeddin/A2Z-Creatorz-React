@@ -1,12 +1,12 @@
 .inner-page-banner {
-    background: url('/hero-bg.webp') no-repeat center center;
+    background: url('/mobile-application-bg.webp') no-repeat center center;
     background-size: cover;
     padding: 100px 0;
     color: white;
     position: relative;
 }
 
-.inner-page-banner::before {
+/* .inner-page-banner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -15,7 +15,7 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
+} */
 
 .banner-content {
     max-width: 1200px;

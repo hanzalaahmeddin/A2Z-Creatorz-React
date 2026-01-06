@@ -90,7 +90,7 @@ const clientsData = [
 
 function OurClients() {
     return (
-        <section className="clients-section">
+        <section className="clients-section py-5">
             <div className="container">
                 <h2 className="sub-main-title-black text-center">Our Clients</h2>
                 <p className="clients-subtitle">Our clients span across 15+ countries, delivering exceptional results worldwide.</p>

@@ -3,17 +3,21 @@
 }
 
 /* BUTTON STYLES */
-.btn-primary {
+.dg-btn {
     background: linear-gradient(135deg, #f15a22, #ff7b47);
-    border: none;
     color: #fff;
-    transition: all 0.3s ease;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.35s ease;
+    border: none;
 }
 
-.btn-primary:hover {
-    background: linear-gradient(135deg, #ff7b47, #f15a22);
+.dg-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(241, 90, 34, 0.4);
+    box-shadow: 0 10px 25px rgba(241, 90, 34, 0.4);
+    background: linear-gradient(135deg,#ff7b47, #f15a22);
 }
 
 html {
@@ -155,7 +159,6 @@ html {
     background-position: center;
     display: flex;
     align-items: center;
-    padding-top: 100px;
 }
 
 .about-heading {
@@ -164,7 +167,6 @@ html {
     margin-bottom: 1rem;
     color: #fff;
     max-width: 70%;
-    animation: fadeInUp 1.5s ease-out;
 }
 
 .about-us img {
@@ -181,47 +183,7 @@ html {
     animation: fadeInUp 1s ease-out;
 }
 
-.about-us .fade-in-delay-1 {
-    animation: fadeInUp 1s ease-out 0.2s both;
-}
 
-.about-us .fade-in-delay-2 {
-    animation: fadeInUp 1s ease-out 0.4s both;
-}
-
-.about-us .fade-in-delay-3 {
-    animation: fadeInUp 1s ease-out 0.6s both;
-}
-
-.about-us .fade-in-delay-4 {
-    animation: fadeInUp 1s ease-out 0.8s both;
-}
-
-.about-us .btn-animated {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.about-us .btn-animated:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.about-us .btn-animated::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
-}
-
-.about-us .btn-animated:hover::before {
-    left: 100%;
-}
 
 .about-us .stats h3 {
     font-size: 2.5rem;
@@ -378,9 +340,14 @@ html {
 }
 
 /* FOOTER */
-.footer {
+/* .footer {
     background-color: #343a40;
-}
+    background: url("/src/assets/images/main-bg.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    align-items: center;
+} */
 
 /* GENERAL RESPONSIVE */
 @media (max-width: 768px) {
@@ -471,4 +438,35 @@ html {
 
 .blue {
     background: linear-gradient(90deg, #396afc, #2948ff);
+}
+.main-btn {
+    background: linear-gradient(135deg, #f15a22, #ff7b47);
+    color: #fff;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(252, 163, 46, 0.4);
+}
+
+.fade-in-delay-1 {
+    animation: fadeInUp 1.5s ease-out 0.2s both;
+}
+
+.fade-in-delay-2 {
+    animation: fadeInUp 2s ease-out 0.4s both;
+}
+
+.fade-in-delay-3 {
+    animation: fadeInUp 2.5s ease-out 0.6s both;
+}
+
+.fade-in-delay-4 {
+    animation: fadeInUp 3s ease-out 0.8s both;
 }

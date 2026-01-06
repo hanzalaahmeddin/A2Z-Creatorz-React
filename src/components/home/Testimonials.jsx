@@ -1,64 +1,62 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import "./Testimonials.css";
 
 function Testimonials() {
-    const testimonials = [
-        {
-            id: 1,
-            name: 'John Doe',
-            position: 'CEO, TechCorp',
-            message: 'A2Z Creatorz delivered an outstanding website that exceeded our expectations. Their team is professional and innovative.',
-            image: '/src/assets/images/a2z-logo-white.png' // Placeholder
-        },
-        {
-            id: 2,
-            name: 'Jane Smith',
-            position: 'Founder, StartupXYZ',
-            message: 'The mobile app they developed for us has been a game-changer. Highly recommend their services!',
-            image: '/src/assets/images/a2z-logo-white.png'
-        },
-        {
-            id: 3,
-            name: 'Mike Johnson',
-            position: 'Marketing Director, BrandInc',
-            message: 'Their digital marketing strategies helped us grow our online presence significantly. Excellent results!',
-            image: '/src/assets/images/a2z-logo-white.png'
-        }
-    ];
 
-    return (
-        <section className="py-5 bg-light testimonials">
-            <div className="container">
-                <h2 className="text-center mb-5">What Our Clients Say</h2>
-                <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
-                    <div className="carousel-inner">
-                        {testimonials.map((testimonial, index) => (
-                            <div key={testimonial.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                                <div className="row justify-content-center">
-                                    <div className="col-lg-8 text-center">
-                                        <img src={testimonial.image} alt={testimonial.name} className="rounded-circle mb-3" style={{ width: '80px', height: '80px' }} />
-                                        <blockquote className="blockquote">
-                                            <p className="mb-3">"{testimonial.message}"</p>
-                                            <footer className="blockquote-footer">
-                                                {testimonial.name}, <cite title="Source Title">{testimonial.position}</cite>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-    );
+  useEffect(() => {
+    // Check if script is already loaded
+    if (!document.querySelector('script[src="https://widget.clutch.co/static/js/widget.js"]')) {
+      const script = document.createElement("script");
+      script.src = "https://widget.clutch.co/static/js/widget.js";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  }, []);
+
+  return (
+    <section className="testimonials-section py-5">
+      <div className="container">
+        <div className="row align-items-center">
+
+          {/* LEFT IMAGE */}
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="/src/assets/images/Image.png"
+              alt="Client Reviews"
+              className="img-fluid fade-in-delay-2"
+            />
+          </div>
+
+          {/* RIGHT CONTENT */}
+          <div className="col-lg-6">
+            <h2 className="sub-main-title-black fade-in-delay-1">
+              Testimonials
+            </h2>
+
+            <h4 className="testimonials-subtitle fade-in-delay-2 mb-4">
+              Hear From Those Who’ve{" "}
+              <span className="fw-bold">Experienced Our Impact</span>
+            </h4>
+
+            {/* CLUTCH REVIEWS */}
+            <div
+              className="clutch-widget fade-in-delay-3"
+              data-url="https://widget.clutch.co"
+              data-widget-type="12"
+              data-height="375"
+              data-nofollow="true"
+              data-expandifr="true"
+              data-scale="100"
+              data-reviews="361482,359538,359226,358912,358324,356231,354521"
+              data-clutchcompany-id="541174"
+            ></div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Testimonials;

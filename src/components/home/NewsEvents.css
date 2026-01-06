@@ -1,0 +1,17 @@
+.news-events-section {
+    background: url("/digital-marketing-bg.webp") center/cover no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+
+.news-subtitle {
+    color: #fff;
+    margin: 15px 0;
+    font-size: 3rem;
+}

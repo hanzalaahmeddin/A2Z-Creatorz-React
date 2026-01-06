@@ -1,9 +1,19 @@
 function Footer() {
     return (
-        <footer className="py-5 bg-dark text-white footer">
+        <footer className="py-5 footer bg-dark text-white">
             <div className="container">
-                <p>&copy; 2023 A2Z Creatorz. All rights reserved.</p>
+                <div className="row text-center">
+                    <div className="col-12">
+                        <div className="d-flex justify-content-center align-items-center gap-3">
+                            <p className="mb-0">Copyright &copy; 2007 – 2026.</p>
+                        <img width={80} src="/src/assets/images/a2z-logo-white.png" alt="A2Z Creatorz Logo" className="footer-logo" />
+                        <p className="mb-0">All Rights Reserved.</p>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
+           
         </footer>
     );
 }
