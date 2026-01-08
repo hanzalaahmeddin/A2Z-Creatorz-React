@@ -33,6 +33,13 @@ html {
     align-items: center;
     padding-top: 100px;
 }
+/* Inner BG */
+.inner-bg {
+    background: url('/line-vector-sec-removebg-preview.png') repeat top center;
+    background-size: contain;
+    padding: 100px 0;
+    color: black;
+}
 
 /* MAIN HEADING */
 .hero-main-title {

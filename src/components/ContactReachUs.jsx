@@ -1,75 +1,23 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../assets/css/contact-reach-us.css";
 
 function ContactReachUs() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        subject: ''
-    });
-
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission
-        console.log(formData);
-    };
-
+    
     return (
         <section className="contact-reach-us">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 px-5">
+                    <div className="col-md-6 px-5 ">
                         <div className="letsTalkCard">
-                            <h3 className="sub-main-title-black">Let’s talk!</h3>
-                            <h2>Contact & Reach Us!</h2>
-                            <form onSubmit={handleSubmit}>
-                                <div className="form-group">
-                                    <label htmlFor="name">Name</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                        placeholder="enter your name"
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="email">Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="subject">Subject</label>
-                                    <input
-                                        type="text"
-                                        id="subject"
-                                        name="subject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                                <button type="submit" className="submit-btn">Submit</button>
-                            </form>
+                            <h3 className="sub-main-title-black fade-in-delay-1">Let’s talk!</h3>
+                            <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Contact & Reach Us!</h2>
+                            <p className="fade-in-delay-3 mb-5">We’re here to help you bring your digital ideas to life. Whether it’s web development, app solutions, or digital strategy, our team is ready to assist. Reach out today and let’s create something amazing together!</p>
+                            <Link to="/contact" className="dg-btn fade-in-delay-1">Get in Touch</Link>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <img className="img-fluid" src="/lets-connect.png" alt="Let's Connect" />
+                        <img className="img-fluid fade-in-delay-1" src="/lets-connect.png" alt="Let's Connect" />
                     </div>
                 </div>
             </div>

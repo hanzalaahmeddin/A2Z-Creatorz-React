@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import InnerPageBanner from "../components/InnerPageBanner";
+import newsPosts from "../data/newsPosts";
 
 function NewsEvents() {
     return (
@@ -10,8 +12,20 @@ function NewsEvents() {
             />
             <section className="py-5">
                 <div className="container">
-                    <h2>News & Events</h2>
-                    <p>Latest updates and events.</p>
+                    <h2 className="text-center mb-4">Latest News & Events</h2>
+                    <div className="row">
+                        {newsPosts.map(post => (
+                            <div key={post.id} className="col-md-6 col-lg-4 mb-4">
+                                <div className="card h-100">
+                                    <img src={post.thumbnail} className="card-img-top" alt={post.title} />
+                                    <div className="card-body">
+                                        <h5 className="card-title">{post.title}</h5>
+                                        <Link to={`/news-events/${post.id}`} className="btn btn-primary">Read More</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
         </div>

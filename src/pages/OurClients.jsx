@@ -5,8 +5,8 @@ function OurClients() {
         <div>
             <InnerPageBanner
                 title="Our Clients"
-                subtitle="Trusted by leading companies worldwide."
-                imageSrc="/service-bg.webp"
+                subtitle="Trusted by Leading Brands – Explore Our Diverse Clientele and Discover How We Help Businesses Achieve Success with Tailored Digital Solutions."
+                imageSrc="/src/assets/images/clients-right-image.png"
             />
             <section className="py-5">
                 <div className="container">

@@ -6,7 +6,7 @@ function Contact() {
             <InnerPageBanner
                 title="Contact Us"
                 subtitle="Get in touch with us for your next project."
-                imageSrc="/service-bg.webp"
+                imageSrc="/src/assets/images/contact-right-image.png"
             />
             <section className="py-5">
                 <div className="container">

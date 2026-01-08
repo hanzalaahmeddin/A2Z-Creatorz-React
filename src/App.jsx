@@ -24,6 +24,7 @@ import MobileApplicationPortfolio from "./pages/MobileApplicationPortfolio";
 import DigitalMarketingPortfolio from "./pages/DigitalMarketingPortfolio";
 import WebApplicationPortfolio from "./pages/WebApplicationPortfolio";
 import NewsEvents from "./pages/NewsEvents";
+import PostDetail from "./pages/PostDetail";
 import OurClients from "./pages/OurClients";
 import Contact from "./pages/Contact";
 import Careers from "./pages/Careers";
@@ -54,6 +55,7 @@ function App() {
         <Route path="/portfolio/digital-marketing" element={<DigitalMarketingPortfolio />} />
         <Route path="/portfolio/web-application" element={<WebApplicationPortfolio />} />
         <Route path="/news-events" element={<NewsEvents />} />
+        <Route path="/news-events/:id" element={<PostDetail />} />
         <Route path="/our-clients" element={<OurClients />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/careers" element={<Careers />} />
