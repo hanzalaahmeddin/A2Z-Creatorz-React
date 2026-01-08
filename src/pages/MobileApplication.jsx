@@ -6,7 +6,7 @@ function MobileApplication() {
             <InnerPageBanner
                 title="Mobile Application"
                 subtitle="Develop cutting-edge mobile apps for iOS and Android platforms."
-                imageSrc="/mobile.png"
+                imageSrc="/ser-mobile-img.png"
             />
             <section className="py-5">
                 <div className="container">

@@ -7,7 +7,7 @@ function Portfolio() {
             <InnerPageBanner
                 title="Portfolio"
                 subtitle="Explore our successful projects and case studies across various industries."
-                imageSrc="/service-bg.webp"
+                imageSrc="/src/assets/images/portfolio-right-image.png"
             />
             <section className="py-5">
                 <div className="container">

@@ -7,10 +7,10 @@ function InnerPageBanner({ title, subtitle, imageSrc }) {
             <div className="banner-content">
                 <div className="banner-left">
                     <h1>{title}</h1>
-                    <p>{subtitle}</p>
-                    <Link to="/contact" className="quote-btn">Get Your Free Quote</Link>
+                    <p className="fade-in-delay-1">{subtitle}</p>
+                    <Link to="/contact" className="dg-btn fade-in-delay-1">Get Your Free Quote</Link>
                 </div>
-                <div className="banner-right">
+                <div className="banner-right fade-in-delay-1">
                     <img src={imageSrc} alt={title} />
                 </div>
             </div>

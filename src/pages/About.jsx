@@ -6,14 +6,15 @@ function About() {
         <div>
             <InnerPageBanner
                 title="About Us"
-                subtitle="A2Z Creatorz is a leading digital agency specializing in web and mobile solutions, delivering innovative and high-quality services to clients worldwide."
-                imageSrc="/about-left-img.webp"
+                subtitle="Innovating the Digital World Discover the Vision Behind A2Z Creatorz!"
+                imageSrc="/src/assets/images/about-us-right-image.png"
             />
             <section className="py-5">
                 <div className="container">
-                    <h2>About Us</h2>
+                    <h2 className="">About Us</h2>
                     <p>
-                        A2Z Creatorz is a digital agency providing web and mobile solutions.
+                        Innovating the Digital World
+                        Discover the Vision Behind A2Z Creatorz!
                     </p>
                 </div>
             </section>

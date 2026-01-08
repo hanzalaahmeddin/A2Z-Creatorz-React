@@ -6,7 +6,7 @@ function NewsEvents() {
             <InnerPageBanner
                 title="News & Events"
                 subtitle="Stay updated with the latest news and events from A2Z Creatorz."
-                imageSrc="/service-bg.webp"
+                imageSrc="/src/assets/images/news-right-image.png"
             />
             <section className="py-5">
                 <div className="container">
