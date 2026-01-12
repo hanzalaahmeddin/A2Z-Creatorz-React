@@ -74,7 +74,7 @@ function Services() {
         <>
             <section className="py-5 services-section" id="services" style={{ backgroundImage: `url(${activeServiceData.bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="container">
-                    <h2 className="hero-main-title">Our Services</h2>
+                    <h2 className="hero-main-title display-2 text-center">Our Services</h2>
                     <div className="row">
                         <div className="col-md-4">
                             <ul className="nav flex-column services-tabs fade-in-delay-1">

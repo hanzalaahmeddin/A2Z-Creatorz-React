@@ -1,4 +1,5 @@
 import InnerPageBanner from "../components/InnerPageBanner";
+import ContactSection from "../components/home/ContactSection";
 
 function Contact() {
     return (
@@ -8,12 +9,7 @@ function Contact() {
                 subtitle="Get in touch with us for your next project."
                 imageSrc="/src/assets/images/contact-right-image.png"
             />
-            <section className="py-5">
-                <div className="container">
-                    <h2>Contact Us</h2>
-                    <p>Contact form and details.</p>
-                </div>
-            </section>
+            <ContactSection />
         </div>
     );
 }

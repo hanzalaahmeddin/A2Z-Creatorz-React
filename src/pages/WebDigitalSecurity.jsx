@@ -1,6 +1,17 @@
 import InnerPageBanner from "../components/InnerPageBanner";
+import ContactReachUs from "../components/ContactReachUs";
+import ToolsSection from "../components/ToolsSection";
 
 function WebDigitalSecurity() {
+    const tools = [
+        { name: 'Bitdefender', image: '/src/assets/images/bitdefender.png' },
+        { name: 'Firewall', image: '/src/assets/images/firewall.png' },
+        { name: 'SSL', image: '/src/assets/images/ssl.png' },
+        { name: 'VPN', image: '/src/assets/images/vpn.png' },
+        { name: 'Antivirus', image: '/src/assets/images/antivirus.png' },
+        { name: 'Intrusion Detection', image: '/src/assets/images/intrusion-detection.png' }
+    ];
+
     return (
         <div>
             <InnerPageBanner
@@ -8,12 +19,25 @@ function WebDigitalSecurity() {
                 subtitle="Protect your digital assets with advanced security solutions."
                 imageSrc="/secure-webhosting.png"
             />
-            <section className="py-5">
+            <section className="inner-bg">
                 <div className="container">
-                    <h2>Web & Digital Security</h2>
-                    <p>Details about web and digital security services.</p>
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A2Z Creatorz Image" />
+                        </div>
+                        <div className="col-md-6">
+                            <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>
+                            <p className="fade-in-delay-2">
+                                Protect your digital assets with comprehensive security solutions that safeguard against threats. Our experts implement robust measures to ensure data integrity, privacy, and compliance across your digital infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                    <ToolsSection tools={tools} />
+
                 </div>
+                <ContactReachUs />
             </section>
+
         </div>
     );
 }

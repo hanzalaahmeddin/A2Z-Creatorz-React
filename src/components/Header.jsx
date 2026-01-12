@@ -90,7 +90,8 @@ function Header() {
                     </div>
                     <NavLink to="/news-events" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>News & Events</NavLink>
                     <NavLink to="/our-clients" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>Our Clients</NavLink>
-                    <div
+                    <NavLink to="/contact" className={({ isActive }) => isActive ? "active" : ""} onClick={() => setMenuOpen(false)}>Contact Us</NavLink>
+                    {/* <div
                         className="dg-nav-item"
                         onMouseEnter={() => setShowContactMenu(true)}
                         onMouseLeave={() => setShowContactMenu(false)}
@@ -102,7 +103,7 @@ function Header() {
                                 <Link to="/contact/careers" onClick={() => setMenuOpen(false)}><FiBriefcase /> Careers</Link>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </nav>
 
                 {/* HAMBURGER */}

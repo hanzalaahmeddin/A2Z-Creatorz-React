@@ -11,9 +11,9 @@ function About() {
             />
             <section className="inner-bg">
                 <div className="container">
-                    <div className="row">
+                    <div className="row align-items-center">
                         <div className="col-md-6">
-
+                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A@Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>

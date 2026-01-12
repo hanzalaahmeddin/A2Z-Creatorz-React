@@ -1,6 +1,17 @@
 import InnerPageBanner from "../components/InnerPageBanner";
+import ContactReachUs from "../components/ContactReachUs";
+import ToolsSection from "../components/ToolsSection";
 
 function ItStaffOutsourcing() {
+    const tools = [
+        { name: 'Jira', image: '/src/assets/images/jira.png' },
+        { name: 'Slack', image: '/src/assets/images/slack.png' },
+        { name: 'Trello', image: '/src/assets/images/trello.png' },
+        { name: 'Git', image: '/src/assets/images/git.png' },
+        { name: 'Docker', image: '/src/assets/images/docker.png' },
+        { name: 'AWS', image: '/src/assets/images/aws.png' }
+    ];
+
     return (
         <div>
             <InnerPageBanner
@@ -8,12 +19,25 @@ function ItStaffOutsourcing() {
                 subtitle="Access skilled IT professionals to support your projects and operations."
                 imageSrc="/IT-Staff-Augmentation.png"
             />
-            <section className="py-5">
+            <section className="inner-bg">
                 <div className="container">
-                    <h2>IT Staff Outsourcing</h2>
-                    <p>Details about IT staff outsourcing services.</p>
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A2Z Creatorz Image" />
+                        </div>
+                        <div className="col-md-6">
+                            <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>
+                            <p className="fade-in-delay-2">
+                                Access a pool of skilled IT professionals to augment your team and accelerate project delivery. Our outsourcing solutions provide flexible, cost-effective staffing options tailored to your specific technology needs and project requirements.
+                            </p>
+                        </div>
+                    </div>
+                    <ToolsSection tools={tools} />
+
                 </div>
+                <ContactReachUs />
             </section>
+
         </div>
     );
 }

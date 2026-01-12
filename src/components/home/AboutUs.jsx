@@ -72,8 +72,8 @@ function AboutUs() {
                         <img src={aboutImg} alt="A2Z Creatorz About us" className={`img-fluid logo-hover ${isVisible ? 'fade-in' : ''}`} />
                     </div>
                     <div className="col-lg-6">
-                        <h2 className={`sub-main-title ${isVisible ? 'fade-in-delay-1' : ''}`}>About Us</h2>
-                        <h2 className={`mb-3 about-heading ${isVisible ? 'fade-in-delay-2' : ''}`}>Global Innovators <span className='fw-bold'>Since 2007</span></h2>
+                        <h2 className={`sub-main-title display-2 ${isVisible ? 'fade-in-delay-1' : ''}`}>About Us</h2>
+                        <h2 className={`about-heading ${isVisible ? 'fade-in-delay-2' : ''}`}>Global Innovators <span className='fw-bold'>Since 2007</span></h2>
 
                         <p className={`text-white ${isVisible ? 'fade-in-delay-3' : ''}`}>
                             A2Z Creatorz has been a trailblazer in global web services for over 17 years. Since its inception in June 2007, the company has spearheaded numerous national, international, and government-driven initiatives, delivering transformative results with unparalleled success.

@@ -7,7 +7,7 @@ function Hero() {
             <div className="container text-center">
 
                 {/* MAIN HEADING */}
-                <h1 className="hero-main-title">
+                <h1 className="hero-main-title display-2">
                     Shaping the Future, Today
                 </h1>
 
@@ -25,11 +25,11 @@ function Hero() {
                         <div className="carousel-item active">
                             <div className="d-flex flex-column align-items-center">
                                 <div className="text-center mb-4">
-                                    <h2 className="hero-slide-title">
+                                    <h2 className="hero-slide-title text-center">
                                         From concept to reality: Your Vision, Our Expertise
                                     </h2>
 
-                                    <p className="hero-slide-text mt-3">
+                                    <p className="hero-slide-text mt-3 text-center">
                                         Our team builds websites that captivate and engage.
                                         Let’s design a platform that reflects your brand,
                                         elevates user experience, and turns visitors into
@@ -53,11 +53,11 @@ function Hero() {
                         <div className="carousel-item">
                             <div className="d-flex flex-column align-items-center">
                                 <div className="text-center mb-4">
-                                    <h2 className="hero-slide-title">
+                                    <h2 className="hero-slide-title text-center">
                                         Bring Your App Vision to Life
                                     </h2>
 
-                                    <p className="hero-slide-text mt-3">
+                                    <p className="hero-slide-text mt-3 text-center">
                                         Create a seamless mobile experience for your audience
                                         with our expert app developers. Whether it’s iOS or
                                         Android, we craft intuitive, high-performing apps

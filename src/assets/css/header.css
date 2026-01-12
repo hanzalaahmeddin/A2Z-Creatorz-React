@@ -49,7 +49,7 @@
 /* ===== NAV ===== */
 .dg-nav {
     display: flex;
-    gap: 32px;
+    gap: 28px;
     position: relative;
     align-items: center;
 }

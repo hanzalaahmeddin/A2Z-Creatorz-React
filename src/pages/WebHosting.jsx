@@ -1,6 +1,17 @@
 import InnerPageBanner from "../components/InnerPageBanner";
+import ContactReachUs from "../components/ContactReachUs";
+import ToolsSection from "../components/ToolsSection";
 
 function WebHosting() {
+    const tools = [
+        { name: 'cPanel', image: '/src/assets/images/cpanel.png' },
+        { name: 'Plesk', image: '/src/assets/images/plesk.png' },
+        { name: 'Apache', image: '/src/assets/images/apache.png' },
+        { name: 'Nginx', image: '/src/assets/images/nginx.png' },
+        { name: 'MySQL', image: '/src/assets/images/mysql.png' },
+        { name: 'Cloudflare', image: '/src/assets/images/cloudflare.png' }
+    ];
+
     return (
         <div>
             <InnerPageBanner
@@ -8,12 +19,25 @@ function WebHosting() {
                 subtitle="Reliable and secure web hosting solutions for your websites."
                 imageSrc="/web-hosting.png"
             />
-            <section className="py-5">
+            <section className="inner-bg">
                 <div className="container">
-                    <h2>Web Hosting</h2>
-                    <p>Details about web hosting services.</p>
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A2Z Creatorz Image" />
+                        </div>
+                        <div className="col-md-6">
+                            <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>
+                            <p className="fade-in-delay-2">
+                                Reliable and secure web hosting solutions tailored to your needs. Our hosting services offer high uptime, fast performance, and scalable options to support your growing online presence and ensure optimal user experience.
+                            </p>
+                        </div>
+                    </div>
+                    <ToolsSection tools={tools} />
+
                 </div>
+                <ContactReachUs />
             </section>
+
         </div>
     );
 }
