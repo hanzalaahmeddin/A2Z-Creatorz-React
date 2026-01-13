@@ -1,7 +1,9 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactSection from "../components/home/ContactSection";
 
 function Contact() {
+    usePageTitle('Contact Us - A2Z Creatorz | Get in Touch');
     return (
         <div>
             <InnerPageBanner

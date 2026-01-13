@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function WebDigitalSecurity() {
+    usePageTitle('Web & Digital Security - A2Z Creatorz | Protect Your Digital Assets');
     const tools = [
         { name: 'Bitdefender', image: '/src/assets/images/bitdefender.png' },
         { name: 'Firewall', image: '/src/assets/images/firewall.png' },

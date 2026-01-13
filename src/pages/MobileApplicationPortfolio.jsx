@@ -1,6 +1,8 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 
 function MobileApplicationPortfolio() {
+    usePageTitle('Mobile Application Portfolio - A2Z Creatorz | App Development Projects');
     return (
         <div>
             <InnerPageBanner

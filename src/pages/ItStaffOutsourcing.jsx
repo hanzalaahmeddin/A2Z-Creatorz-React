@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function ItStaffOutsourcing() {
+    usePageTitle('IT Staff Outsourcing - A2Z Creatorz | Skilled IT Professionals');
     const tools = [
         { name: 'Jira', image: '/src/assets/images/jira.png' },
         { name: 'Slack', image: '/src/assets/images/slack.png' },

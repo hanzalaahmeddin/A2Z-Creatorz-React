@@ -1,6 +1,8 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 
 function Careers() {
+    usePageTitle('Careers - A2Z Creatorz | Join Our Team');
     return (
         <div>
             <InnerPageBanner

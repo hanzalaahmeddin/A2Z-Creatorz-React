@@ -483,3 +483,36 @@ html {
     transform: scale(1.05);
     box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.3);
 }
+
+/* PORTFOLIO CARDS */
+.portfolio-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.portfolio-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}

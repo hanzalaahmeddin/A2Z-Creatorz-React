@@ -1,6 +1,8 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 
 function Bitdefender() {
+    usePageTitle('Bitdefender Security Solutions - A2Z Creatorz | Advanced Cybersecurity');
     return (
         <div>
             <InnerPageBanner

@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function DigitalMarketing() {
+    usePageTitle('Digital Marketing Services - A2Z Creatorz | SEO, PPC, Social Media Marketing');
     const tools = [
         { name: 'Google Analytics', image: '/src/assets/images/google-analytics.png' },
         { name: 'Facebook Ads', image: '/src/assets/images/facebook-ads.png' },

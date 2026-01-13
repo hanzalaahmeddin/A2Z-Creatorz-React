@@ -1,3 +1,4 @@
+import usePageTitle from '../hooks/usePageTitle';
 import Hero from "../components/home/Hero";
 
 import Services from "../components/home/Services";
@@ -12,6 +13,7 @@ import NewsEvents from "../components/home/NewsEvents";
 import ContactSection from "../components/home/ContactSection";
 
 function Home() {
+    usePageTitle('A2Z Creatorz - Leading Web Design & Development Company in Pakistan');
     return (
         <>
             <Hero />

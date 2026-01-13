@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import newsPosts from "../data/newsPosts";
 
 function NewsEvents() {
+    usePageTitle('News & Events - A2Z Creatorz | Latest Updates');
     return (
         <div>
             <InnerPageBanner

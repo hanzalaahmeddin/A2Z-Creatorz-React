@@ -1,6 +1,8 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 
 function GoogleWorkspacePlans() {
+    usePageTitle('Google Workspace Plans - A2Z Creatorz | Productivity Tools');
     return (
         <div>
             <InnerPageBanner

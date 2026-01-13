@@ -1,6 +1,8 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 
 function DigitalMarketingPortfolio() {
+    usePageTitle('Digital Marketing Portfolio - A2Z Creatorz | Marketing Campaign Projects');
     return (
         <div>
             <InnerPageBanner

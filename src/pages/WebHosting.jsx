@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function WebHosting() {
+    usePageTitle('Web Hosting Services - A2Z Creatorz | Reliable Hosting Solutions');
     const tools = [
         { name: 'cPanel', image: '/src/assets/images/cpanel.png' },
         { name: 'Plesk', image: '/src/assets/images/plesk.png' },

@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function Ecommerce() {
+    usePageTitle('Ecommerce Solutions - A2Z Creatorz | Online Stores & Shopping Platforms');
     const tools = [
         { name: 'Shopify', image: '/src/assets/images/shopify.png' },
         { name: 'WooCommerce', image: '/src/assets/images/woocommerce.png' },

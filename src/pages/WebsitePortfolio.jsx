@@ -1,6 +1,8 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 
 function WebsitePortfolio() {
+    usePageTitle('Website Portfolio - A2Z Creatorz | Our Web Design Projects');
     return (
         <div>
             <InnerPageBanner

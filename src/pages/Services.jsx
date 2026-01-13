@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ServicesComponent from "../components/home/Services";
 import ContactReachUs from "../components/ContactReachUs";
 
 function Services() {
+    usePageTitle('Our Services - A2Z Creatorz | Web Design, Mobile Apps, Digital Marketing');
   return (
     <div>
       <InnerPageBanner

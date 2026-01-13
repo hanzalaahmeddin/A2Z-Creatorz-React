@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function UiUxDesign() {
+    usePageTitle('UI/UX Design Services - A2Z Creatorz | User Interface & Experience Design');
     const tools = [
         { name: 'Figma', image: '/src/assets/images/figma.png' },
         { name: 'Adobe XD', image: '/src/assets/images/adobe-xd.png' },

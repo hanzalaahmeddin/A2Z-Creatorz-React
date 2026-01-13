@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function WebDesignDevelopment() {
+    usePageTitle('Web Design & Development Services - A2Z Creatorz | Custom Websites');
     const tools = [
         { name: 'HTML', image: '/src/assets/images/html.webp' },
         { name: 'CSS', image: '/src/assets/images/css.png' },
@@ -40,7 +42,7 @@ function WebDesignDevelopment() {
                             <p className="fade-in-delay-2">
                                 Transform your online presence with bespoke websites that are visually striking, highly functional, and future-ready. Leveraging advanced technologies, we craft responsive, user-centric designs that deliver seamless experiences across devices, ensuring your brand stands out and drives growth.
                             </p>
-                            </div>
+                        </div>
                     </div>
                     <ToolsSection tools={tools} />
 

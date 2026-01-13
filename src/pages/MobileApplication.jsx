@@ -1,8 +1,10 @@
+import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
 function MobileApplication() {
+    usePageTitle('Mobile Application Development - A2Z Creatorz | iOS & Android Apps');
     const tools = [
         { name: 'React Native', image: '/src/assets/images/react-native.png' },
         { name: 'Flutter', image: '/src/assets/images/flutter.png' },

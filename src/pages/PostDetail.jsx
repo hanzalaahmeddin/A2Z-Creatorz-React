@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import InnerPageBanner from "../components/InnerPageBanner";
 import newsPosts from "../data/newsPosts";
@@ -5,6 +6,12 @@ import newsPosts from "../data/newsPosts";
 function PostDetail() {
     const { id } = useParams();
     const post = newsPosts.find(p => p.id === parseInt(id));
+
+    useEffect(() => {
+        if (post) {
+            document.title = `${post.title} - A2Z Creatorz`;
+        }
+    }, [post]);
 
     if (!post) {
         return <div>Post not found</div>;
