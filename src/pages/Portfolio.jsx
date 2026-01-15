@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
-import ContactReachUs from "../components/ContactReachUs";
 import OurPortfolio from "../components/home/OurPortfolio";
 
 import bannerImg from '../assets/images/portfolio-right-image.png';
