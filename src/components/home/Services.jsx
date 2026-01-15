@@ -25,7 +25,7 @@ function Services() {
     const services = [
         {
             id: 1,
-            slug: 'custom-web-development',
+            slug: 'web-design-development',
             title: 'Custom Web Development',
             image: customWebDevImg,
             secondImage: frontendWhiteImg,
@@ -35,7 +35,7 @@ function Services() {
         },
         {
             id: 2,
-            slug: 'mobile-app-development',
+            slug: 'mobile-application',
             title: 'Mobile App Development',
             image: appBannerImg,
             secondImage: mobileAppWhiteImg,
@@ -45,7 +45,7 @@ function Services() {
         },
         {
             id: 3,
-            slug: 'digital-marketing-excellence',
+            slug: 'digital-marketing',
             title: 'Digital Marketing Excellence',
             image: digitalMarketingImg,
             secondImage: digitalMarketingIconImg,
@@ -55,7 +55,7 @@ function Services() {
         },
         {
             id: 4,
-            slug: 'secure-web-hosting',
+            slug: 'web-hosting',
             title: 'Secure Web Hosting',
             image: webHostingImg,
             secondImage: secureWebHostingImg,
@@ -65,7 +65,7 @@ function Services() {
         },
         {
             id: 5,
-            slug: 'bitdefender-cybersecurity',
+            slug: 'bitdefender',
             title: 'Bitdefender Cybersecurity',
             image: bitdefenderImg,
             secondImage: bitdefenderIconsImg,
@@ -75,7 +75,7 @@ function Services() {
         },
         {
             id: 6,
-            slug: 'it-staff-augmentation',
+            slug: 'it-staff-outsourcing',
             title: 'IT Staff Augmentation',
             image: itStaffAugImg,
             secondImage: itStaffIconsImg,
