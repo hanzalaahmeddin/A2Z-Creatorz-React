@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
@@ -10,24 +11,28 @@ const portfolioData = [
         title: "Web Development",
         desc: "Crafting innovative, impactful, and personalized digital experiences that inspire, engage, and bring your vision to life.",
         img: "src/assets/images/portfolio-web.png",
+        path: "/portfolio/website",
     },
     {
         title: "Mobile Application",
         desc: "Delivering seamless and dynamic application solutions tailored to your needs.",
         img: "src/assets/images/portfolio-mobile.png",
+        path: "/portfolio/mobile-application",
     },
     {
         title: "Digital Marketing",
         desc: "Showcasing creativity and innovation through cutting-edge digital marketing solutions.",
         img: "src/assets/images/portfolio-digital.png",
+        path: "/portfolio/digital-marketing",
     },
 
     {
         title: "E-Commerce",
         desc: "Building secure and scalable web portals to seamlessly empower your business.",
         img: "src/assets/images/portfolio-ecommerce.png",
+        path: "/portfolio/ecommerce",
     },
-    
+
 
 ];
 
@@ -64,7 +69,7 @@ function OurPortfolio() {
 
                                 <h4>{item.title}</h4>
                                 <p>{item.desc}</p>
-                                <button className="dg-btn">View More</button>
+                                <Link to={item.path} className="dg-btn text-center">View More</Link>
                             </div>
                         </SwiperSlide>
                     ))}

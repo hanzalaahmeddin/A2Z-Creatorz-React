@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
+import OurPortfolio from "../components/home/OurPortfolio";
 
 function Portfolio() {
     usePageTitle('Portfolio - A2Z Creatorz | Our Successful Projects');
@@ -21,24 +22,8 @@ function Portfolio() {
                 subtitle="Explore our successful projects and case studies across various industries."
                 imageSrc="/src/assets/images/portfolio-right-image.png"
             />
-            <section className="inner-bg">
-                
+            <OurPortfolio />
             
-            <section className="portfolio-cards-section">
-                <div className="container">
-                    <div className="row">
-                        {portfolios.map((portfolio, index) => (
-                            <div key={index} className="col-md-4 mb-4">
-                                <Link to={portfolio.path} className="portfolio-card">
-                                    <img src={portfolio.image} alt={portfolio.title} className="img-fluid" />
-                                    <h3>{portfolio.title}</h3>
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-            </section>
 
         </div>
     );

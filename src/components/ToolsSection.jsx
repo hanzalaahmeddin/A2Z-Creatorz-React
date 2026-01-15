@@ -15,7 +15,6 @@ const ToolsSection = ({ tools }) => {
   return (
     <div className="row mt-5">
       <div className="col-12">
-        <h3 className="text-center mb-4">Tools We Use</h3>
         <div className="row justify-content-center">
           {tools.map((tool, index) => {
             const colorIndex = index % colors.length;
