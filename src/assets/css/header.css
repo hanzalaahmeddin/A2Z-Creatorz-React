@@ -193,6 +193,29 @@
     padding: 8px;
 }
 
+/* LAPTOP RESPONSIVE */
+@media (max-width: 1200px) {
+    .dg-nav {
+        gap: 10px;
+    }
+    .dg-nav a {
+        font-size: 14px;
+    }
+
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .dg-nav {
+        gap: 10px;
+    }
+
+    .dg-nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
+
 /* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 768px) {
     .dg-inner {

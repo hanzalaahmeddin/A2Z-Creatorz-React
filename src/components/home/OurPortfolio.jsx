@@ -6,30 +6,36 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./OurPortfolio.css";
 
+// Import images
+import portfolioWebImg from "../../assets/images/portfolio-web.png";
+import portfolioMobileImg from "../../assets/images/portfolio-mobile.png";
+import portfolioDigitalImg from "../../assets/images/portfolio-digital.png";
+import portfolioEcommerceImg from "../../assets/images/portfolio-ecommerce.png";
+
 const portfolioData = [
     {
         title: "Web Development",
         desc: "Crafting innovative, impactful, and personalized digital experiences that inspire, engage, and bring your vision to life.",
-        img: "src/assets/images/portfolio-web.png",
+        img: portfolioWebImg,
         path: "/portfolio/website",
     },
     {
         title: "Mobile Application",
         desc: "Delivering seamless and dynamic application solutions tailored to your needs.",
-        img: "src/assets/images/portfolio-mobile.png",
+        img: portfolioMobileImg,
         path: "/portfolio/mobile-application",
     },
     {
         title: "Digital Marketing",
         desc: "Showcasing creativity and innovation through cutting-edge digital marketing solutions.",
-        img: "src/assets/images/portfolio-digital.png",
+        img: portfolioDigitalImg,
         path: "/portfolio/digital-marketing",
     },
 
     {
         title: "E-Commerce",
         desc: "Building secure and scalable web portals to seamlessly empower your business.",
-        img: "src/assets/images/portfolio-ecommerce.png",
+        img: portfolioEcommerceImg,
         path: "/portfolio/ecommerce",
     },
 

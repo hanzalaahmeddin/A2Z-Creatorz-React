@@ -4,6 +4,8 @@ import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import OurPortfolio from "../components/home/OurPortfolio";
 
+import bannerImg from '../assets/images/portfolio-right-image.png';
+
 function Portfolio() {
     usePageTitle('Portfolio - A2Z Creatorz | Our Successful Projects');
 
@@ -20,7 +22,7 @@ function Portfolio() {
             <InnerPageBanner
                 title="Portfolio"
                 subtitle="Explore our successful projects and case studies across various industries."
-                imageSrc="/src/assets/images/portfolio-right-image.png"
+                imageSrc={bannerImg}
             />
             <OurPortfolio />
             

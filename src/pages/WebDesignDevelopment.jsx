@@ -3,27 +3,45 @@ import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
+// Import images
+import htmlImg from '../assets/images/html.webp';
+import cssImg from '../assets/images/css.png';
+import jsImg from '../assets/images/javascript.png';
+import reactImg from '../assets/images/react.png';
+import nextjsImg from '../assets/images/nextjs.png';
+import phpImg from '../assets/images/php.png';
+import laravelImg from '../assets/images/laravel.png';
+import pythonImg from '../assets/images/python.webp';
+import aspImg from '../assets/images/asp.webp';
+import swiftImg from '../assets/images/swift.png';
+import bootstrapImg from '../assets/images/bootstrap.png';
+import wordpressImg from '../assets/images/wordpress.png';
+import elementorImg from '../assets/images/elementor.webp';
+import shopifyImg from '../assets/images/shopify.webp';
+import magentoImg from '../assets/images/magento.webp';
+import wixImg from '../assets/images/wix.png';
+import bannerImg from '../assets/images/service-website-right.png';
+import webDesignImg from '../assets/images/web-design-img-left.png';
+
 function WebDesignDevelopment() {
     usePageTitle('Web Design & Development Services - A2Z Creatorz | Custom Websites');
     const tools = [
-        { name: 'HTML', image: '/src/assets/images/html.webp' },
-        { name: 'CSS', image: '/src/assets/images/css.png' },
-        { name: 'JavaScript', image: '/src/assets/images/javascript.png' },
-        { name: 'React', image: '/src/assets/images/react.png' },
-        { name: 'Next.js', image: '/src/assets/images/nextjs.png' },
-        { name: 'PHP', image: '/src/assets/images/php.png' },
-        { name: 'Laravel', image: '/src/assets/images/laravel.png' },
-        { name: 'Python', image: '/src/assets/images/python.webp' },
-        { name: 'ASP.net', image: '/src/assets/images/asp.webp' },
-        { name: 'Swift', image: '/src/assets/images/swift.png' },
-        { name: 'Bootstrap', image: '/src/assets/images/bootstrap.png' },
-        { name: 'WordPress', image: '/src/assets/images/wordpress.png' },
-        { name: 'Elementor', image: '/src/assets/images/elementor.webp' },
-        { name: 'Shopify', image: '/src/assets/images/shopify.webp' },
-        { name: 'Magento', image: '/src/assets/images/magento.webp' },
-        { name: 'Wix', image: '/src/assets/images/wix.png' },
-        { name: 'Webflow', image: '/src/assets/images/webflow.png' },
-        { name: 'Squarespace', image: '/src/assets/images/squarespace.png' }
+        { name: 'HTML', image: htmlImg },
+        { name: 'CSS', image: cssImg },
+        { name: 'JavaScript', image: jsImg },
+        { name: 'React', image: reactImg },
+        { name: 'Next.js', image: nextjsImg },
+        { name: 'PHP', image: phpImg },
+        { name: 'Laravel', image: laravelImg },
+        { name: 'Python', image: pythonImg },
+        { name: 'ASP.net', image: aspImg },
+        { name: 'Swift', image: swiftImg },
+        { name: 'Bootstrap', image: bootstrapImg },
+        { name: 'WordPress', image: wordpressImg },
+        { name: 'Elementor', image: elementorImg },
+        { name: 'Shopify', image: shopifyImg },
+        { name: 'Magento', image: magentoImg },
+        { name: 'Wix', image: wixImg }
     ];
 
     return (
@@ -31,13 +49,13 @@ function WebDesignDevelopment() {
             <InnerPageBanner
                 title="Web Design & Development"
                 subtitle="Crafting Stunning Websites That Drive Results Experience Innovation with A2Z Creatorz!"
-                imageSrc="/src/assets/images/service-website-right.png"
+                imageSrc={bannerImg}
             />
             <section className="inner-bg">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/web-design-img-left.png" alt="A@Z Creatorz Image" />
+                            <img className="img-fluid fade-in-delay-1" src={webDesignImg} alt="A@Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Website Design & Development</h2>

@@ -26,7 +26,7 @@ html {
 
 /* HERO SECTION */
 .hero-section {
-    background: url("/src/assets/images/hero-bg.webp");
+    background: url("../images/hero-bg.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -159,7 +159,7 @@ html {
 
 /* ABOUT US SECTION */
 .about-us {
-    background: url("/src/assets/images/hero-bg.webp");
+    background: url("../images/hero-bg.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -210,7 +210,7 @@ html {
 
 /* SERVICES SECTION */
 .services-section {
-    background: url("/src/assets/images/service-bg.webp");
+    background: url("../images/service-bg.webp");
     background-size: cover;
     background-position: center;
     color: white;
@@ -351,6 +351,94 @@ html {
     background-repeat: no-repeat;
     align-items: center;
 } */
+
+/* LAPTOP RESPONSIVE */
+@media (max-width: 1200px) {
+
+    .hero-main-title,
+    .sub-main-title,
+    .sub-main-title-black {
+        font-size: 3rem;
+    }
+
+    .news-subtitle {
+        font-size: 2rem;
+    }
+
+    .testimonials-subtitle {
+        font-size: 2rem;
+    }
+
+    .form-title {
+        font-size: 22px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 12px;
+        border: 1px solid #e5e7eb;
+        margin-bottom: 18px;
+        font-size: 13px;
+    }
+
+    .dg-btn {
+
+        font-size: 13px;
+    }
+
+    .contact-info-item p {
+        font-size: 13px;
+    }
+
+    .contact-info-item a {
+
+        font-size: 13px;
+    }
+
+    .hero-slide-title {
+        font-size: 2.5rem;
+    }
+    .social-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+}
+
+    .about-heading {
+        font-size: 2.5rem;
+    }
+    .floating-whatsapp {
+    
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+}
+.service-content li {
+    font-size: 13px;
+}
+}
+
+/* TABLET RESPONSIVE */
+@media (max-width: 992px) {
+
+    .hero-main-title,
+    .sub-main-title,
+    .sub-main-title-black {
+        font-size: 3rem;
+    }
+
+    .hero-slide-title {
+        font-size: 2rem;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+}
 
 /* GENERAL RESPONSIVE */
 @media (max-width: 768px) {

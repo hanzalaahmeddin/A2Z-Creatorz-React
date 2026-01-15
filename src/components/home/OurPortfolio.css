@@ -1,5 +1,5 @@
 .portfolio-portfolio-section {
-    background: url("/src/assets/images/main-bg.jpg");
+    background: url("../../assets/images/main-bg.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -89,6 +89,25 @@
     background: #e44a14;
 }
 
+.portfolio-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* LAPTOP RESPONSIVE */
+@media (max-width: 1200px) {
+    .portfolio-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* TABLET RESPONSIVE */
+@media (max-width: 992px) {
+    .portfolio-subtitle {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .portfolio-swiper-scope .portfolio-img-wrap {
         margin-top: -80px;
@@ -97,6 +116,10 @@
 
     .portfolio-title {
         font-size: 32px;
+    }
+
+    .portfolio-subtitle {
+        font-size: 0.9rem;
     }
 }
 

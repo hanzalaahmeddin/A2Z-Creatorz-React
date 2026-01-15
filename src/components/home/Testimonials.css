@@ -1,5 +1,5 @@
 .testimonials-section {
-    background: url("/src/assets/images/main-bg.jpg") center/cover no-repeat;
+    background: url("../../assets/images/main-bg.jpg") center/cover no-repeat;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

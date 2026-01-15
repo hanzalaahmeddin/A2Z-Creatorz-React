@@ -1,31 +1,24 @@
 import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
-import ToolsSection from "../components/ToolsSection";
+
+import bannerImg from '../assets/images/service-ui-ux-right.png';
 
 function UiUxDesign() {
     usePageTitle('UI/UX Design Services - A2Z Creatorz | User Interface & Experience Design');
-    const tools = [
-        { name: 'Figma', image: '/src/assets/images/figma.png' },
-        { name: 'Adobe XD', image: '/src/assets/images/adobe-xd.png' },
-        { name: 'Sketch', image: '/src/assets/images/sketch.png' },
-        { name: 'InVision', image: '/src/assets/images/invision.png' },
-        { name: 'Photoshop', image: '/src/assets/images/photoshop.png' },
-        { name: 'Illustrator', image: '/src/assets/images/illustrator.png' }
-    ];
 
     return (
         <div>
             <InnerPageBanner
                 title="UI/UX Design"
                 subtitle="Design intuitive user interfaces and experiences that delight users."
-                imageSrc="/src/assets/images/service-ui-ux-right.png"
+                imageSrc={bannerImg}
             />
             <section className="inner-bg">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/service-ui-ux-right.png" alt="A2Z Creatorz Image" />
+                            <img className="img-fluid fade-in-delay-1" src={bannerImg} alt="A2Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>
@@ -34,7 +27,6 @@ function UiUxDesign() {
                             </p>
                         </div>
                     </div>
-                    <ToolsSection tools={tools} />
 
                 </div>
                 <ContactReachUs />
