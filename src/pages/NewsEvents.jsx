@@ -3,6 +3,8 @@ import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import newsPosts from "../data/newsPosts";
 
+import newsRightImg from '../assets/images/news-right-image.png';
+
 function NewsEvents() {
     usePageTitle('News & Events - A2Z Creatorz | Latest Updates');
     return (
@@ -10,7 +12,7 @@ function NewsEvents() {
             <InnerPageBanner
                 title="News & Events"
                 subtitle="Stay updated with the latest news and events from A2Z Creatorz."
-                imageSrc="/src/assets/images/news-right-image.png"
+                imageSrc={newsRightImg}
             />
             <section className="py-5">
                 <div className="container">
