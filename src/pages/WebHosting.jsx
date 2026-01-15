@@ -3,6 +3,9 @@ import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
+import webHostingImg from '../assets/images/web-hosting.png';
+import a2zAboutImg from '../assets/images/a2z-about-image-1.webp';
+
 function WebHosting() {
     usePageTitle('Web Hosting Services - A2Z Creatorz | Reliable Hosting Solutions');
     const tools = [
@@ -19,13 +22,13 @@ function WebHosting() {
             <InnerPageBanner
                 title="Web Hosting"
                 subtitle="Reliable and secure web hosting solutions for your websites."
-                imageSrc="/web-hosting.png"
+                imageSrc={webHostingImg}
             />
             <section className="inner-bg">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A2Z Creatorz Image" />
+                            <img className="img-fluid fade-in-delay-1" src={a2zAboutImg} alt="A2Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>

@@ -2,6 +2,23 @@ import React, { useState } from 'react';
 import { FaCode, FaMobileAlt, FaBullhorn, FaPalette, FaShieldAlt, FaUsers, FaServer } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+import customWebDevImg from '../../assets/images/Custom-Web-Development.png';
+import frontendWhiteImg from '../../assets/images/frontend-white.png';
+import serviceBgImg from '../../assets/images/service-bg.webp';
+import appBannerImg from '../../assets/images/App-Banner.png';
+import mobileAppWhiteImg from '../../assets/images/mobile-appication-white.png';
+import mobileAppBgImg from '../../assets/images/mobile-application-bg.webp';
+import digitalMarketingImg from '../../assets/images/digital-marketing.webp';
+import digitalMarketingIconImg from '../../assets/images/Digital-Marketing-icon.png';
+import digitalMarketingBgImg from '../../assets/images/digital-marketing-bg.webp';
+import webHostingImg from '../../assets/images/web-hosting.png';
+import secureWebHostingImg from '../../assets/images/secure-webhosting.png';
+import bitdefenderImg from '../../assets/images/Bitdefender-img.png';
+import bitdefenderIconsImg from '../../assets/images/bitdefender-icons.png';
+import itStaffAugImg from '../../assets/images/IT-Staff-Augmentation.png';
+import itStaffIconsImg from '../../assets/images/it-staff-icons.png';
+import uiUxBgImg from '../../assets/images/ui-ux-design-bg.webp';
+
 function Services() {
     const [activeService, setActiveService] = useState(1);
 
@@ -10,9 +27,9 @@ function Services() {
             id: 1,
             slug: 'custom-web-development',
             title: 'Custom Web Development',
-            image: '/src/assets/images/Custom-Web-Development.png',
-            secondImage: '/src/assets/images/frontend-white.png',
-            bgImage: '/src/assets/images/service-bg.webp',
+            image: customWebDevImg,
+            secondImage: frontendWhiteImg,
+            bgImage: serviceBgImg,
             description: 'UI/UX Design. Portal Development. Open Source & Customized CMS. E-Commerce Solutions. B2B Portal Development. Website Support & Maintenance. Software Development Presence',
             icon: <FaCode />
         },
@@ -20,9 +37,9 @@ function Services() {
             id: 2,
             slug: 'mobile-app-development',
             title: 'Mobile App Development',
-            image: '/src/assets/images/App-Banner.png',
-            secondImage: '/src/assets/images/mobile-appication-white.png',
-            bgImage: '/src/assets/images/mobile-application-bg.webp',
+            image: appBannerImg,
+            secondImage: mobileAppWhiteImg,
+            bgImage: mobileAppBgImg,
             description: 'Hybrid Apps. Android App Development. IOS App Development. React Native Apps. Flutter Apps. Progressive Web Apps',
             icon: <FaMobileAlt />
         },
@@ -30,9 +47,9 @@ function Services() {
             id: 3,
             slug: 'digital-marketing-excellence',
             title: 'Digital Marketing Excellence',
-            image: '/src/assets/images/digital-marketing.webp',
-            secondImage: '/src/assets/images/Digital-Marketing-icon.png',
-            bgImage: '/src/assets/images/digital-marketing-bg.webp',
+            image: digitalMarketingImg,
+            secondImage: digitalMarketingIconImg,
+            bgImage: digitalMarketingBgImg,
             description: 'Social Media Marketing (SMM). Social Media Optimization (SMO). Search Engine Optimization (SEO). Email Marketing. Online Reputation Management',
             icon: <FaBullhorn />
         },
@@ -40,9 +57,9 @@ function Services() {
             id: 4,
             slug: 'secure-web-hosting',
             title: 'Secure Web Hosting',
-            image: '/src/assets/images/web-hosting.png',
-            secondImage: '/src/assets/images/secure-webhosting.png',
-            bgImage: '/src/assets/images/service-bg.webp',
+            image: webHostingImg,
+            secondImage: secureWebHostingImg,
+            bgImage: serviceBgImg,
             description: 'Hosting Packages. Corporate Web & E-mail Hosting. Application Hosting. Virtual Private Servers (VPS). Dedicated Servers. Cloud Hosting. Google Workspace. Office 365. Domain Registration Services ',
             icon: <FaServer />
         },
@@ -50,9 +67,9 @@ function Services() {
             id: 5,
             slug: 'bitdefender-cybersecurity',
             title: 'Bitdefender Cybersecurity',
-            image: '/src/assets/images/Bitdefender-img.png',
-            secondImage: '/src/assets/images/bitdefender-icons.png',
-            bgImage: '/src/assets/images/mobile-application-bg.webp',
+            image: bitdefenderImg,
+            secondImage: bitdefenderIconsImg,
+            bgImage: mobileAppBgImg,
             description: 'Bitdefender Internet Security. Bitdefender Antivirus Plus. Bitdefender Total Security. Bitdefender Gravity Zone Business Security. Bitdefender Gravity Zone Business Security Premium. Bitdefender Gravity Zone Business Security Enterprise',
             icon: <FaShieldAlt />
         },
@@ -60,9 +77,9 @@ function Services() {
             id: 6,
             slug: 'it-staff-augmentation',
             title: 'IT Staff Augmentation',
-            image: '/src/assets/images/it-staff-augmentation.png',
-            secondImage: '/src/assets/images/it-staff-icons.png',
-            bgImage: '/src/assets/images/ui-ux-design-bg.webp',
+            image: itStaffAugImg,
+            secondImage: itStaffIconsImg,
+            bgImage: uiUxBgImg,
             description: 'Virtual CIO Expertise. End-to-End IT Project Management. Tailored Development Solutions. Comprehensive Technology Stack. Secure Workforce Offboarding. Proactive Technical Support. 24/7 Helpdesk Solutions. Seamless User Onboarding & Training. Resilient Disaster Recovery Framework. Strategic Technology Roadmap',
             icon: <FaUsers />
         }

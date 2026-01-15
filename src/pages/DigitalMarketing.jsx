@@ -3,6 +3,9 @@ import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
+import digitalRightImg from '../assets/images/a2z-digital-right-img.webp';
+import a2zAboutImg from '../assets/images/a2z-about-image-1.webp';
+
 function DigitalMarketing() {
     usePageTitle('Digital Marketing Services - A2Z Creatorz | SEO, PPC, Social Media Marketing');
     const tools = [
@@ -19,13 +22,13 @@ function DigitalMarketing() {
             <InnerPageBanner
                 title="Digital Marketing"
                 subtitle="Enhance your online presence with effective digital marketing strategies."
-                imageSrc="/src/assets/images/a2z-digital-right-img.webp"
+                imageSrc={digitalRightImg}
             />
             <section className="inner-bg">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A2Z Creatorz Image" />
+                            <img className="img-fluid fade-in-delay-1" src={a2zAboutImg} alt="A2Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>

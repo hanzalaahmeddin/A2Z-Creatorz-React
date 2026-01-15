@@ -4,16 +4,20 @@ import InnerPageBanner from "../components/InnerPageBanner";
 import OurPortfolio from "../components/home/OurPortfolio";
 
 import bannerImg from '../assets/images/portfolio-right-image.png';
+import portfolioWebImg from '../assets/images/portfolio-web.png';
+import portfolioEcommerceImg from '../assets/images/portfolio-ecommerce.png';
+import portfolioMobileImg from '../assets/images/portfolio-mobile.png';
+import portfolioDigitalImg from '../assets/images/portfolio-digital.png';
 
 function Portfolio() {
     usePageTitle('Portfolio - A2Z Creatorz | Our Successful Projects');
 
     const portfolios = [
-        { title: 'Website', image: '/src/assets/images/portfolio-web.png', path: '/portfolio/website' },
-        { title: 'Ecommerce', image: '/src/assets/images/portfolio-ecommerce.png', path: '/portfolio/ecommerce' },
-        { title: 'Mobile Application', image: '/src/assets/images/portfolio-mobile.png', path: '/portfolio/mobile-application' },
-        { title: 'Digital Marketing', image: '/src/assets/images/portfolio-digital.png', path: '/portfolio/digital-marketing' },
-        { title: 'Web Application', image: '/src/assets/images/portfolio-web.png', path: '/portfolio/web-application' },
+        { title: 'Website', image: portfolioWebImg, path: '/portfolio/website' },
+        { title: 'Ecommerce', image: portfolioEcommerceImg, path: '/portfolio/ecommerce' },
+        { title: 'Mobile Application', image: portfolioMobileImg, path: '/portfolio/mobile-application' },
+        { title: 'Digital Marketing', image: portfolioDigitalImg, path: '/portfolio/digital-marketing' },
+        { title: 'Web Application', image: portfolioWebImg, path: '/portfolio/web-application' },
     ];
 
     return (
@@ -24,7 +28,7 @@ function Portfolio() {
                 imageSrc={bannerImg}
             />
             <OurPortfolio />
-            
+
 
         </div>
     );

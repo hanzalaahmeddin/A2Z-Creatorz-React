@@ -1,26 +1,30 @@
 import React from 'react';
 
+import webImg from '../../assets/images/web.png';
+import mobileImg from '../../assets/images/mobile.png';
+import a2zLogoWhiteImg from '../../assets/images/a2z-logo-white.png';
+
 function Blogs() {
     const blogs = [
         {
             id: 1,
             title: 'The Future of Web Development',
             excerpt: 'Explore the latest trends in web development, from AI integration to progressive web apps.',
-            image: '/src/assets/images/web.png',
+            image: webImg,
             date: 'December 2023'
         },
         {
             id: 2,
             title: 'Mobile App Trends for 2024',
             excerpt: 'Discover what\'s new in mobile app development and how to stay ahead of the curve.',
-            image: '/src/assets/images/mobile.png',
+            image: mobileImg,
             date: 'November 2023'
         },
         {
             id: 3,
             title: 'Digital Marketing Strategies',
             excerpt: 'Effective digital marketing tactics to boost your online presence and engagement.',
-            image: '/src/assets/images/a2z-logo-white.png',
+            image: a2zLogoWhiteImg,
             date: 'October 2023'
         }
     ];

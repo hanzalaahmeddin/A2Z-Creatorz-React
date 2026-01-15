@@ -3,6 +3,9 @@ import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 import ToolsSection from "../components/ToolsSection";
 
+import mobileAppRightImg from '../assets/images/mboile-app-right.webp';
+import a2zAboutImg from '../assets/images/a2z-about-image-1.webp';
+
 function MobileApplication() {
     usePageTitle('Mobile Application Development - A2Z Creatorz | iOS & Android Apps');
     const tools = [
@@ -19,13 +22,13 @@ function MobileApplication() {
             <InnerPageBanner
                 title="Mobile Application"
                 subtitle="Develop cutting-edge mobile apps for iOS and Android platforms."
-                imageSrc="/src/assets/images/mboile-app-right.webp"
+                imageSrc={mobileAppRightImg}
             />
             <section className="inner-bg">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A2Z Creatorz Image" />
+                            <img className="img-fluid fade-in-delay-1" src={a2zAboutImg} alt="A2Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>
