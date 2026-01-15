@@ -1,6 +1,9 @@
 import React from "react";
 import "./NewsEvents.css";
 
+import thumbnail01 from '../../assets/images/blog/thumbnail-01.jpg';
+import thumbnail02 from '../../assets/images/blog/thumbnail-02.jpg';
+
 const NewsEvents = () => {
     return (
         <section className="news-events-section py-5">
@@ -24,11 +27,11 @@ const NewsEvents = () => {
                         </button>
                     </div>
                     <div className="col-md-4">
-                        <img className="img-fluid fade-in-delay-2" src="src/assets/images/blog/thumbnail-01.jpg" alt="News 1" />
+                        <img className="img-fluid fade-in-delay-2" src={thumbnail01} alt="News 1" />
                         <h5 className="fade-in-delay-3 mt-3">A2Z Creatorz participated at 26th ITCN Asia 2025 – Pavilion of Innovation.</h5>
                     </div>
                     <div className="col-md-4">
-                        <img className="img-fluid fade-in-delay-2" src="src/assets/images/blog/thumbnail-02.jpg" alt="News 1" />
+                        <img className="img-fluid fade-in-delay-2" src={thumbnail02} alt="News 1" />
                         <h5 className="fade-in-delay-3 mt-3">A2Z Creatorz participated at LEAP 2025 – Booth I150 (A-11) in Riyadh</h5>
                     </div>
                     

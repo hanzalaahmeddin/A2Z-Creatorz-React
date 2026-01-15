@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import "../assets/css/contact-reach-us.css";
 
+import letsConnectImg from '/lets-connect.png';
+
 function ContactReachUs() {
     
     return (
@@ -17,7 +19,7 @@ function ContactReachUs() {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <img className="img-fluid fade-in-delay-1" src="/lets-connect.png" alt="Let's Connect" />
+                        <img className="img-fluid fade-in-delay-1" src={letsConnectImg} alt="Let's Connect" />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import "./ContactMap.css";
+
+import contactMapImg from '../assets/images/contact-map.png';
 const locations = [
   {
     country: "Pakistan",
@@ -30,7 +32,7 @@ const locations = [
 const ContactMap = () => {
   return (
     <div className="contact-map-wrapper">
-      <img src="src/assets/images/contact-map.png" alt="Global Offices Map" />
+      <img src={contactMapImg} alt="Global Offices Map" />
 
       {locations.map((loc, index) => (
         <div

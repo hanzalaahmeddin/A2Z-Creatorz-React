@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Testimonials.css";
 
+import clientReviewsImg from '../../assets/images/Image.png';
+
 function Testimonials() {
 
   useEffect(() => {
@@ -21,7 +23,7 @@ function Testimonials() {
           {/* LEFT IMAGE */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img
-              src="/src/assets/images/Image.png"
+              src={clientReviewsImg}
               alt="Client Reviews"
               className="img-fluid fade-in-delay-2"
             />

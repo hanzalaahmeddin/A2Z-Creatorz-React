@@ -2,6 +2,9 @@ import usePageTitle from '../hooks/usePageTitle';
 import InnerPageBanner from "../components/InnerPageBanner";
 import ContactReachUs from "../components/ContactReachUs";
 
+import aboutUsRightImg from '../assets/images/about-us-right-image.png';
+import a2zAboutImg from '../assets/images/a2z-about-image-1.webp';
+
 function About() {
     usePageTitle('About Us - A2Z Creatorz | Leading IT Solutions Provider');
     return (
@@ -9,13 +12,13 @@ function About() {
             <InnerPageBanner
                 title="About Us"
                 subtitle="Innovating the Digital World Discover the Vision Behind A2Z Creatorz!"
-                imageSrc="/src/assets/images/about-us-right-image.png"
+                imageSrc={aboutUsRightImg}
             />
             <section className="inner-bg">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <img className="img-fluid fade-in-delay-1" src="/src/assets/images/a2z-about-image-1.webp" alt="A@Z Creatorz Image" />
+                            <img className="img-fluid fade-in-delay-1" src={a2zAboutImg} alt="A@Z Creatorz Image" />
                         </div>
                         <div className="col-md-6">
                             <h2 className="testimonials-subtitle fade-in-delay-2 mb-4">Who Are We</h2>
