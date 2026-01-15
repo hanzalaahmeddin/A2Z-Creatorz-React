@@ -5,85 +5,125 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./OurClients.css";
 
+// Flags
+import pakistanFlag from '../../assets/images/flags/Pakistan.png';
+import uaeFlag from '../../assets/images/flags/UAE.png';
+import canadaFlag from '../../assets/images/flags/Canada.png';
+import qatarFlag from '../../assets/images/flags/Qatar.png';
+import australiaFlag from '../../assets/images/flags/Australia.png';
+import usaFlag from '../../assets/images/flags/USA.png';
+import ksaFlag from '../../assets/images/flags/KSA.png';
+import omanFlag from '../../assets/images/flags/Oman.png';
+
+// Client logos
+import stateLifeLogo from '../../assets/images/clients/State-life.png';
+import pspcLogo from '../../assets/images/clients/PSPC.png';
+import housingRecostructionUnitLogo from '../../assets/images/clients/Housing-Recostruction-Unit.png';
+import bhcipLogo from '../../assets/images/clients/BHCIP.png';
+import braLogo from '../../assets/images/clients/B-R-A.png';
+import futureLogo from '../../assets/images/clients/Future.png';
+import hamdardLogo from '../../assets/images/clients/Hamdard.png';
+import hbfcLogo from '../../assets/images/clients/HBFC.png';
+import tdfLogo from '../../assets/images/clients/TDF.png';
+import assetLinkerLogo from '../../assets/images/clients/Asset-Linker.png';
+import alJaberOpticalLogo from '../../assets/images/clients/al-jaber-optical.png';
+import vivelLogo from '../../assets/images/clients/VIVEL.png';
+import wataniyaFinanceLogo from '../../assets/images/clients/Wataniya-Finance-.png';
+import zillionLogo from '../../assets/images/clients/zillion.png';
+import zogaLogo from '../../assets/images/clients/zoga.png';
+import crUniqueLogo from '../../assets/images/clients/cr-unique.jpg';
+import quickzLaundryLogo from '../../assets/images/clients/Quickz-Laundry.png';
+import a2zLogo from '../../assets/images/clients/a2z.png';
+import dimensoinLogo from '../../assets/images/clients/Dimensoin.png';
+import htxSteelsLogo from '../../assets/images/clients/HTX-Steels.png';
+import illAustraliaLogo from '../../assets/images/clients/ill-Australia.png';
+import dietCenterLogo from '../../assets/images/clients/Diet-Center.png';
+import eizoLogo from '../../assets/images/clients/Eizo.png';
+import happyHomeLogo from '../../assets/images/clients/Happy-Home.png';
+import saadedeinLogo from '../../assets/images/clients/Saadedein.png';
+import dosteenLogo from '../../assets/images/clients/dosteen.png';
+import hawthornLogo from '../../assets/images/clients/hawthorn.png';
+import alShaerCorpLogo from '../../assets/images/clients/Al-Shaer-corp.png';
+
 const clientsData = [
     {
         country: "Pakistan",
-        flag: "src/assets/images/flags/Pakistan.png",
+        flag: pakistanFlag,
         clients: [
-            "src/assets/images/clients/State-life.png",
-            "src/assets/images/clients/PSPC.png",
-            "src/assets/images/clients/Housing-Recostruction-Unit.png",
-            "src/assets/images/clients/BHCIP.png",
-            "src/assets/images/clients/B-R-A.png",
-            "src/assets/images/clients/Future.png",
-            "src/assets/images/clients/Hamdard.png",
-            "src/assets/images/clients/HBFC.png",
-            "src/assets/images/clients/TDF.png",
-            "src/assets/images/clients/Asset-Linker.png",
+            stateLifeLogo,
+            pspcLogo,
+            housingRecostructionUnitLogo,
+            bhcipLogo,
+            braLogo,
+            futureLogo,
+            hamdardLogo,
+            hbfcLogo,
+            tdfLogo,
+            assetLinkerLogo,
 
         ],
     },
     {
         country: "United Arab Emirates",
-        flag: "src/assets/images/flags/UAE.png",
+        flag: uaeFlag,
         clients: [
-            "src/assets/images/clients/al-jaber-optical.png",
-            "src/assets/images/clients/VIVEL.png",
-            "src/assets/images/clients/Wataniya-Finance-.png",
-            "src/assets/images/clients/zillion.png",
-            "src/assets/images/clients/zoga.png",
-            "src/assets/images/clients/cr-unique.jpg",
+            alJaberOpticalLogo,
+            vivelLogo,
+            wataniyaFinanceLogo,
+            zillionLogo,
+            zogaLogo,
+            crUniqueLogo,
         ],
     },
     {
         country: "Canada",
-        flag: "src/assets/images/flags/Canada.png",
+        flag: canadaFlag,
         clients: [
-            "src/assets/images/clients/Quickz-Laundry.png",
-            "src/assets/images/clients/a2z.png",
+            quickzLaundryLogo,
+            a2zLogo,
         ],
     },
     {
         country: "Qatar",
-        flag: "src/assets/images/flags/Qatar.png",
+        flag: qatarFlag,
         clients: [
-            "src/assets/images/clients/Dimensoin.png",
-            "src/assets/images/clients/a2z.png",
+            dimensoinLogo,
+            a2zLogo,
         ],
     },
     {
         country: "Australia",
-        flag: "src/assets/images/flags/Australia.png",
+        flag: australiaFlag,
         clients: [
-            "src/assets/images/clients/HTX-Steels.png",
-            "src/assets/images/clients/a2z.png",
+            htxSteelsLogo,
+            a2zLogo,
         ],
     },
     {
         country: "United States",
-        flag: "src/assets/images/flags/USA.png",
+        flag: usaFlag,
         clients: [
-            "src/assets/images/clients/ill-Australia.png",
-            "src/assets/images/clients/a2z.png",
+            illAustraliaLogo,
+            a2zLogo,
         ],
     },
     {
         country: "KSA",
-        flag: "src/assets/images/flags/KSA.png",
+        flag: ksaFlag,
         clients: [
-            "src/assets/images/clients/Diet-Center.png",
-            "src/assets/images/clients/Eizo.png.png",
-            "src/assets/images/clients/Happy-Home.png",
-            "src/assets/images/clients/Saadedein.png",
+            dietCenterLogo,
+            eizoLogo,
+            happyHomeLogo,
+            saadedeinLogo,
         ],
     },
     {
         country: "Oman",
-        flag: "src/assets/images/flags/Oman.png",
+        flag: omanFlag,
         clients: [
-            "src/assets/images/clients/dosteen.png",
-            "src/assets/images/clients/hawthorn.png",
-            "src/assets/images/clients/Al-Shaer-corp.png",
+            dosteenLogo,
+            hawthornLogo,
+            alShaerCorpLogo,
         ],
     },
 ];
