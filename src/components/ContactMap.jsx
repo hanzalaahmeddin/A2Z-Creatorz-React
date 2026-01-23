@@ -6,24 +6,28 @@ const locations = [
   {
     country: "Pakistan",
     email: "info@a2zcreatorz.com",
-    top: "52%",
-    left: "62%",
+    phone: "+92-21-35385205 (07)",
+    top: "55%",
+    left: "57%",
   },
   {
     country: "Canada",
     email: "info@a2zcreatorz.ca",
+    phone: "+92-21-35385205 (07)",
     top: "32%",
     left: "28%",
   },
   {
-    country: "UAE",
+    country: "United Arab Emirates",
     email: "info@a2zcreatorz.ae",
-    top: "46%",
-    left: "58%",
+    phone: "+971 50 1304251",
+    top: "54%",
+    left: "50%",
   },
   {
     country: "UK",
     email: "info@a2zcreatorz.co.uk",
+    phone: "+92-21-35385205 (07)",
     top: "28%",
     left: "48%",
   },
@@ -43,8 +47,9 @@ const ContactMap = () => {
           <span className="pulse"></span>
 
           <div className="map-tooltip">
-            <strong>{loc.country}</strong>
-            <p>{loc.email}</p>
+            <strong className="mb-1">{loc.country}</strong>
+            <p className="mb-0">{loc.email}</p>
+            <p className="mb-0">{loc.phone}</p>
           </div>
         </div>
       ))}
